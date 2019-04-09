@@ -43,7 +43,7 @@
   </licenses>
 
   <properties>
-    <jclouds.version>2.0.2</jclouds.version>
+    <jclouds.version>2.1.2</jclouds.version>
   </properties>
 
   <repositories>
@@ -149,17 +149,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds.labs</groupId>
-      <artifactId>b2</artifactId>
-      <version>${jclouds.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.jclouds.labs</groupId>
       <artifactId>glacier</artifactId>
-      <version>${jclouds.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.jclouds.labs</groupId>
-      <artifactId>google-cloud-storage</artifactId>
       <version>${jclouds.version}</version>
     </dependency>
     <dependency>
