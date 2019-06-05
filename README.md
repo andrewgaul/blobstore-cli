@@ -3,7 +3,7 @@
 blobstore-cli provides command-line access to the blobstore abstraction in
 [Apache jclouds](https://jclouds.apache.org/), the multi-cloud toolkit.
 blobstore-cli reimplements parts of
-[jclouds-cli](https://repo1.maven.org/maven2/org/apache/jclouds/cli/jclouds-cli-assembly/)
+[jclouds-cli](https://github.com/apache/karaf-jclouds-cli)
 using a lighter-weight framework, reducing both binary size and startup time.
 
 ## Compiling
@@ -42,6 +42,12 @@ blobstore --properties properties.conf container create MYCONTAINER
 
 To access private cloud s3 and swift, provide `jclouds.endpoint` in the
 properties.
+
+## References
+
+* [jclouds-cli](https://github.com/apache/karaf-jclouds-cli)
+* [libcloud-cli](https://github.com/coyo8/libcloud-cli)
+* [pkgcloud-cli](https://github.com/pkgcloud/pkgcloud-cli)
 
 ## License
 
