@@ -6,21 +6,33 @@ blobstore-cli reimplements parts of
 [jclouds-cli](https://github.com/apache/karaf-jclouds-cli)
 using a lighter-weight framework, reducing both binary size and startup time.
 
-## Compiling
-
-User can build the project by running `mvn package` which
-produces a binary at `target/blobstore-cli`.  blobstore-cli requires Java 7 to
-run.
-
 ## Usage
 
-`blobstore-cli` packages as an executable jar.  Users must provide a properties
+Users can [download releases](https://github.com/gaul/blobstore-cli/releases)
+from GitHub.  Developers can build the project by running `mvn package` which
+produces a binary at `target/blobstore`.  blobstore-cli requires Java 7 to
+run.
+
+blobstore-cli packages as an executable jar.  Users must provide a properties
 files which includes the credentials and endpoint:
 
 ```
 jclouds.provider=aws-s3
 jclouds.identity=xxxxxxxxxxxxxxxxxxxx
 jclouds.credential=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+Next run `blobstore`.  Linux and Mac OS X users can run the executable jar:
+
+```
+chmod +x blobstore
+blobstore
+```
+
+Windows users must explicitly invoke java:
+
+```
+java -jar blobstore
 ```
 
 Then invoke via:
